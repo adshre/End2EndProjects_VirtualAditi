@@ -1,0 +1,132 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "wassup", "what's up?", "Hi Aditi", "hey Aditi", "hello Aditi"],
+     "responses": ["Hello,i am VirtualAditi the bot who will help understand Aditi better"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "ttyl"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "thnks"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How could you help me?", "What can you do?", "What help can you provide?", "How can you be helpful?", "What support is offered", "what is your use"],
+     "responses": ["I can tell you about Aditi's developed projects or hobbies", "I can help you understand Aditi's background and projects"],
+     "context": [""]
+    },
+    {"tag": "projects",
+     "patterns": ["what are her projects?", "tell me about her work", "Give me a list of aditi's projects", "List all past projects", "what are her professional projects", "Describe her project work" , "what has she worked on"],
+     "responses": ["Aditi has always tried to self learn via building projects across different domains. In Barclays she has worked on 'Test Env Monitor' , 'AID Pilot', 'GOLF' to name a few. Apart from that she has other projects like 'Lyricsmatch', 'StockMarket Prediction' , 'Help Alzhemier', 'Url Shortner App'. To know more in detail ask me about these projects individually."],
+     "context": [""]
+    },
+    {"tag": "about_aditi",
+     "patterns": ["who is Aditi", "Describe Aditi", "tell me in detail about aditi", "tell something about her", "Do you know Aditi", "How is Aditi"],
+     "responses": ["Aditi has received her BE from University of Mumbai and is doing her Masters from University of Florida. Her 3 years experience in Barclays as a developer have shaped her better technically and helped her understand customer needs.She believes that Change and Learning are the two constants in life. Thus she thrives hard to learn and push her boundaries. Ask me about her projects to know more."],
+     "context": [""]
+    },
+    {"tag": "aid_pilot",
+     "patterns": ["I want to know about AID PILOT", "what is AID PILOT", "aid pilot", "tell me about aid pilot", "describe in detail about AID PILOT" ],
+     "responses": ["Analytically Intelligent Dashboard Pilot would take the activity log of the user on Barclays platforms into consideration to help the bank understand the possible journeys through the bank’s channels. The work helped her in identifying the root cause associated with these journey failures and its difference to Bot performed journeys so that they could be further analyzed to give actionable insights to the stakeholders."],
+     "context": ["search_project_by_aid_pilot"]
+    },
+    {"tag": "search_project_by_aid_pilot",
+     "patterns": [],
+     "responses": ["Loading AID Pilot Details"],
+     "context": [""]
+    },
+    {"tag": "golf",
+     "patterns": ["what is GOLF", "Find golf", "tell me in detail about golf", "golf", "Describe GOLF" ],
+     "responses": ["GOLF is Global Online Form and Aditi has worked  on implementing Account Closure journey in existing Submit IT- Global Online Forms(GOLF) to cater to open accounts and international numbers. Also Worked on fixing Veracode vulnerabilities and improving Sonar Unit Test Coverage for various GOLF in Barclays."],
+     "context": ["search_project_by_golf"]
+    },
+    {"tag": "search_project_by_golf",
+     "patterns": [],
+     "responses": ["Loading GOLF details"],
+     "context": [""]
+    }, 
+    
+    {"tag": "lyrics match",
+     "patterns": ["what is LyricsMatch", "Find lyrics match", "tell me in detail about Lyrics match", "golf", "Describe Lyrics Match", "LYRICS MATCH", "lyrics match" ],
+     "responses": ["Aditi developed an app in Android Studio with Speech-to-Text feature to search for a song and play it, according to the lyrics matched with the user input. It had helped her bagged first prize in Intra Level National Project Showcase in College. More over inspired her to explore ML/AI field."],
+     "context": ["search_project_by_lyrics_match"]
+    },
+  
+    {"tag": "search_project_by_lyrics_match",
+     "patterns": [],
+     "responses": ["Loading lyrics match details"],
+     "context": [""]
+    },
+
+    {"tag": "test_env_monitor",
+     "patterns": ["I want to know about test env monitor", "what is TEST monitor", "Test environment monitor", "tell me about Test env Monitor", "describe in detail about test env monitor", "TEST ENV MONITOR", "test env monitor" ],
+     "responses": ["It is  a monitoring and alerting solution for test environments across the bank. The solution helped developers get pristine information about any environmental change that may impact the delivery of a product to the end user. In the event of a bad environment, created tool would inform the developers and project owners via email. This helped in saving manual labour, time, money, and resources. The project helped her learn as well as implement Groovy, Spring-boot, Angular, Tableau, and SoapUI framework and tools."],
+     "context": ["search_project_by_test_env_monitor"]
+    },
+    {"tag": "search_project_by_test_env_monitor",
+     "patterns": [],
+     "responses": ["Loading Test Env Monitor Details"],
+     "context": [""]
+    },
+
+    {"tag": "stock_market_prediction",
+     "patterns": ["what is stock market prediction", "Find StockMarketPrediction", "tell me in detail about stock market prediction", "stock market prediction", "Describe STOCK MARKET PREDICTION" ],
+     "responses": ["Project that predicts opening stock prices for Amazon and Netflix. Also it forecast opening stock prices for next 20 days. Link https://github.com/adshre/End2EndProjects_StockPricePrediction."],
+     "context": ["search_project_by_stock_market_prediction"]
+    },
+    {"tag": "search_project_by_stock_market_prediction",
+     "patterns": [],
+     "responses": ["Loading Stock Market Prediction details"],
+     "context": [""]
+    }, 
+    {"tag": "Help_Alzheimer",
+     "patterns": ["what is Help Alzheimer", "Find Help Alzheimer", "tell me in detail about help alzheimer", "Help Alzheimer", "Describe Help Alzheimer", "HelpAlzheimer" ],
+     "responses": ["Project that contains sub project that would help Alzhemier patients like Daily reminders, etc . Link https://github.com/adshre/End2EndProjects_Alzheimer."],
+     "context": ["search_project_by_help_alzheimer"]
+    },
+    {"tag": "search_project_by_help_alzheimer",
+     "patterns": [],
+     "responses": ["Loading Help Alzheimer details"],
+     "context": [""]
+    },
+    {"tag": "url_shortner_app",
+     "patterns": ["what is Url Shortner App", "Find Url shortner applciation", "tell me in detail about shorting of url", "url short shortner", "url shortner app", "URL SHORTNER APP", "Describe url shortner app" ],
+     "responses": ["It is a flask application that helps to shorten Urls given as input and also keep a count of number of visits done for these urls.Link https://github.com/adshre/Practice_Projects/tree/main/UrlShortnerUsingFlask."],
+     "context": ["search_project_by_url_shortner_app"]
+     },
+    {"tag": "search_project_by_url_shortner_app",
+     "patterns": [],
+     "responses": ["Loading Url Shortner App details"],
+     "context": [""]
+    },
+    {"tag": "other_projects",
+     "patterns": ["what are Aditi's other projects", "Has she developed anything else", "tell me in detail about some other projects than these", "anything else", "Describe apart from these projects", "other projects" ],
+     "responses": ["You can check her git hub profile for further projects under Practice_Projects Repo and more. Link to her github profile is https://github.com/adshre."],
+     "context": ["search_project_by_others"]
+    },
+    {"tag": "search_project_by_others",
+     "patterns": [],
+     "responses": ["Loading other project details"],
+     "context": [""]
+    },
+    {"tag": "hobbies",
+     "patterns": ["what are her hobbies", "what does aditi do in free time?", "I want to know about her hobbies", "list her hobbies", "tell in detail about her hobbies"],
+     "responses": ["Aditi likes to read and paint. She loves reading articles , blogs both technical and fictional. Also she has been recognized for her art work . Kay Kay Menon had Liked her art work of his."],
+     "context": ["search_hobbies"]
+    },
+    {"tag": "search_hobbies",
+     "patterns": [],
+     "responses": ["Loading hobbies details"],
+     "context": [""]
+    }
+]
+}
