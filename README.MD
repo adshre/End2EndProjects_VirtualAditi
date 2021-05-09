@@ -1,4 +1,4 @@
-# Stock Price Prediction :
+# Virtual Aditi:
 ![Alt text](virtual-aditi.gif)
 
 This Repo contains rule based chatbot cloning Aditi( Yup That's Me!) using Flask and is deployed on Heroku
